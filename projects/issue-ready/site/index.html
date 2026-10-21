@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="Write a clear bug report and review likely sensitive text before sharing it.">
+    <title>IssueReady — local bug report builder</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="site-header">
+        <a class="brand" href="./" aria-label="IssueReady home">
+          <span class="brand-mark" aria-hidden="true">IR</span>
+          <span>IssueReady</span>
+        </a>
+        <label class="language-control" for="language">
+          <span class="language-label" data-i18n="languageLabel">Language</span>
+          <select id="language" name="language">
+            <option value="en" data-i18n="english">English</option>
+            <option value="zh-CN" data-i18n="chinese">简体中文</option>
+          </select>
+        </label>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span><span data-i18n="eyebrow">BUG REPORT / LOCAL ONLY</span></p>
+            <h1 id="page-title" data-i18n="pageTitle">Help maintainers reproduce your bug.</h1>
+            <p class="hero-lead" data-i18n="pageLead">Turn the details you already have into a clear report, then review likely sensitive text before you share it.</p>
+          </div>
+          <aside class="privacy-card" aria-label="Privacy note">
+            <span class="privacy-icon" aria-hidden="true">↳</span>
+            <div>
+              <p class="privacy-title" data-i18n="privacyTitle">Your report stays in this tab.</p>
+              <p class="privacy-copy" data-i18n="privacyCopy">Nothing is uploaded. Refreshing the page clears your draft.</p>
+            </div>
+          </aside>
+        </section>
+
+        <ol class="stepper" aria-label="Report steps">
+          <li id="step-compose" class="stepper-item is-active"><span class="step-number">01</span><span data-i18n="stepCompose">Write the report</span></li>
+          <li id="step-review" class="stepper-item"><span class="step-number">02</span><span data-i18n="stepReview">Review and share</span></li>
+        </ol>
+
+        <div id="status" class="status-message" role="status" aria-live="polite" aria-atomic="true" data-i18n="initialStatus">A quick scan can miss things. Review the complete report before sharing.</div>
+
+        <section id="compose-panel" class="panel compose-panel" aria-labelledby="compose-heading">
+          <div class="panel-heading">
+            <div>
+              <p class="section-index" data-i18n="sectionOne">01 / DETAILS</p>
+              <h2 id="compose-heading" data-i18n="composeHeading">Describe what happened</h2>
+            </div>
+            <p class="panel-note" data-i18n="composeNote">A useful report gives maintainers a way to see the same problem.</p>
+          </div>
+
+          <form id="report-form" novalidate autocomplete="off">
+            <div class="form-grid">
+              <div class="form-field field-wide">
+                <label for="title"><span data-i18n="titleLabel">Issue title</span><span class="field-tag required-tag" data-i18n="required">Required</span></label>
+                <input id="title" name="title" type="text" required aria-required="true" aria-describedby="title-hint title-error" aria-invalid="false" spellcheck="false">
+                <p id="title-hint" class="field-hint" data-i18n="titleHint">Keep it specific, such as “App closes after importing a CSV”.</p>
+                <p id="title-error" class="field-error" hidden data-i18n="titleError">Add a title before continuing.</p>
+              </div>
+
+              <div class="form-field field-wide">
+                <label for="summary"><span data-i18n="summaryLabel">What went wrong?</span><span class="field-tag" data-i18n="optional">Optional</span></label>
+                <textarea id="summary" name="summary" rows="3" spellcheck="false" data-i18n-placeholder="summaryPlaceholder" placeholder="A short description helps maintainers understand the impact."></textarea>
+              </div>
+
+              <div class="form-field field-wide">
+                <label for="version"><span data-i18n="versionLabel">Version and environment</span><span class="field-tag" data-i18n="optional">Optional</span></label>
+                <input id="version" name="version" type="text" spellcheck="false" data-i18n-placeholder="versionPlaceholder" placeholder="App version, operating system, browser, runtime…">
+              </div>
+
+              <div class="form-field">
+                <label for="steps"><span data-i18n="stepsLabel">Steps to reproduce</span><span class="field-tag" data-i18n="optional">Optional</span></label>
+                <textarea id="steps" name="steps" rows="5" spellcheck="false" data-i18n-placeholder="stepsPlaceholder" placeholder="1. Open…&#10;2. Choose…&#10;3. Notice…"></textarea>
+              </div>
+
+              <div class="form-field">
+                <label for="expected"><span data-i18n="expectedLabel">Expected result</span><span class="field-tag" data-i18n="optional">Optional</span></label>
+                <textarea id="expected" name="expected" rows="5" spellcheck="false" data-i18n-placeholder="expectedPlaceholder" placeholder="What did you expect to happen?"></textarea>
+              </div>
+
+              <div class="form-field field-wide">
+                <label for="actual"><span data-i18n="actualLabel">Actual result</span><span class="field-tag" data-i18n="optional">Optional</span></label>
+                <textarea id="actual" name="actual" rows="4" spellcheck="false" data-i18n-placeholder="actualPlaceholder" placeholder="What happened instead? Include any visible error."></textarea>
+              </div>
+
+              <div class="form-field field-wide">
+                <label for="logs"><span data-i18n="logsLabel">Relevant logs</span><span class="field-tag" data-i18n="optional">Optional</span></label>
+                <textarea id="logs" name="logs" rows="7" spellcheck="false" data-i18n-placeholder="logsPlaceholder" placeholder="Paste only the lines that help explain the problem."></textarea>
+                <p class="field-hint" data-i18n="logsHint">The scanner checks common patterns. It cannot guarantee that every secret is found.</p>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button id="scan-button" class="button button-primary" type="submit"><span data-i18n="scanButton">Check and preview</span><span aria-hidden="true">→</span></button>
+              <button id="clear-button" class="button button-quiet" type="button" data-i18n="clearButton">Clear draft</button>
+              <span class="action-note" data-i18n="manualNote">You decide what to copy or download.</span>
+            </div>
+          </form>
+        </section>
+
+        <section id="review-panel" class="panel review-panel" aria-labelledby="review-heading" hidden>
+          <div class="panel-heading">
+            <div>
+              <p class="section-index" data-i18n="sectionTwo">02 / REVIEW</p>
+              <h2 id="review-heading" data-i18n="reviewHeading">Review before sharing</h2>
+            </div>
+            <p class="panel-note" data-i18n="reviewNote">Every possible match starts redacted. Check the final Markdown yourself.</p>
+          </div>
+
+          <div id="stale-notice" class="stale-notice" role="alert" hidden>
+            <strong data-i18n="staleTitle">The report changed after its scan.</strong>
+            <span data-i18n="staleCopy">Run the scan again before copying or downloading.</span>
+          </div>
+
+          <div id="review-content" class="review-grid">
+            <section class="findings-panel" aria-labelledby="findings-heading">
+              <div class="subpanel-heading">
+                <div>
+                  <h3 id="findings-heading" data-i18n="findingsHeading">Possible sensitive text</h3>
+                  <p id="finding-summary" class="subpanel-note"></p>
+                </div>
+                <span class="local-chip" data-i18n="localChip">LOCAL</span>
+              </div>
+              <div id="finding-list" class="finding-list"></div>
+            </section>
+
+            <section class="preview-panel" aria-labelledby="preview-heading">
+              <div class="subpanel-heading preview-heading-row">
+                <div>
+                  <h3 id="preview-heading" data-i18n="previewHeading">Markdown preview</h3>
+                  <p class="subpanel-note" data-i18n="previewNote">This is the exact text your buttons will share.</p>
+                </div>
+                <div class="preview-actions">
+                  <button id="copy-button" class="button button-small button-secondary" type="button" data-i18n="copyButton">Copy</button>
+                  <button id="download-button" class="button button-small button-primary" type="button" data-i18n="downloadButton">Download .md</button>
+                </div>
+              </div>
+              <pre id="preview" tabindex="0" aria-label="Markdown report preview"></pre>
+            </section>
+          </div>
+
+          <div class="review-footer">
+            <p class="review-reminder"><span class="reminder-mark" aria-hidden="true">!</span><span data-i18n="reviewReminder">Detection is best-effort. Check the complete preview, including anything the scanner did not flag.</span></p>
+            <div class="review-navigation">
+              <button id="back-button" class="button button-secondary" type="button" data-i18n="backButton">Back to edit</button>
+              <button id="rescan-button" class="button button-quiet" type="button" data-i18n="rescanButton">Scan again</button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span data-i18n="footerNote">Built for careful bug reports. No accounts, uploads, or telemetry.</span>
+        <span>IssueReady <span aria-hidden="true">·</span> v1</span>
+      </footer>
+    </div>
+  </body>
+</html>

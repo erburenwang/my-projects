@@ -1,12 +1,13 @@
-# 个人作品集
+# Open-source projects
 
-收录以前制作的两个本地网页应用。
+Small, practical tools for developers and open-source maintainers.
 
-| 项目 | 内容 | 运行 |
+| Project | What it does | Try it |
 | --- | --- | --- |
-| [拓扑五子棋](projects/topology-gomoku/) | 七种棋盘拓扑、二维/三维视图、人机对弈、本地 Rapfi AI | `npm install`，`npm run dev` |
-| [健身打卡](projects/fitness-mobile/) | 训练记录、饮食记录、休息计时、动作教学和备份 | `python -m http.server 4173 --directory dist` |
+| [IssueReady](projects/issue-ready/) | Draft a reproducible bug report and review likely sensitive text locally before sharing. | [Open the app](https://erburenwang.github.io/my-projects/) |
+| [Topology Gomoku](projects/topology-gomoku/) | Gomoku with seven board topologies, 2D/3D views, human play, and local Rapfi AI. | See the [project README](projects/topology-gomoku/) |
+| [Fitness tracker](projects/fitness-mobile/) | Training and meal logs, rest timer, exercise guides, and backup. | See the [project README](projects/fitness-mobile/) |
 
-各项目的运行说明、第三方资源许可保留在对应目录中。
+IssueReady is a standalone static app with no account, upload, telemetry, or third-party runtime dependencies. Its scanner is best-effort; review the complete preview before sharing. See its [privacy notes and source](projects/issue-ready/).
 
-个人训练记录保存在使用者浏览器本地，仓库不包含浏览器数据、账号凭据或聊天记录。
+Older projects retain their own run instructions and third-party asset licenses. Fitness records stay in the user's browser; this repository does not include browser data, account credentials, or chat history.

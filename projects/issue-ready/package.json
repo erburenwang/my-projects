@@ -1,0 +1,10 @@
+{
+  "name": "issue-ready",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:scanner": "node --test tests/scanner.test.js"
+  }
+}
