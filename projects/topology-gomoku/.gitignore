@@ -1,0 +1,6 @@
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Reconstructed from verified engine-data parts
+public/rapfi/rapfi.data

@@ -1,0 +1,3126 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-17T15:38:09.997Z",
+  "seed": 20261017,
+  "pairsPerTopology": 12,
+  "gamesPerTopology": 24,
+  "budgetMsPerMove": 30,
+  "rules": "自由五子棋；各拓扑使用其自身唯一五连窗口；双方同一拓扑、相同单步预算",
+  "engines": {
+    "new": "topology-native iterative-deepening alpha-beta/PVS + transposition table + forcing quiescence",
+    "baseline": "ai-before-upgrade.mjs exact snapshot, used as the previous topology-search baseline",
+    "rapfiParity": "not measured; planar Rapfi is not a same-topology reference for these wrapped boards"
+  },
+  "model": null,
+  "topologies": {
+    "cylinder": {
+      "size": "7x6",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 24,
+        "wins": 22,
+        "draws": 2,
+        "losses": 0,
+        "scoreRate": 0.958,
+        "averagePlies": 17.8,
+        "newEngine": {
+          "moves": 176,
+          "averageNodes": 466,
+          "averageDepth": 1.64,
+          "timeoutRate": 0.727,
+          "averageMs": 23.45
+        },
+        "baseline": {
+          "moves": 154,
+          "averageNodes": 45,
+          "averageDepth": 1.87,
+          "timeoutRate": 0,
+          "averageMs": 2.24
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1792,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 93.15150000000003
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 8.894200000000012
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1824,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 93.3902
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 7.262700000000024
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 2432,
+            "depth": 8,
+            "timeouts": 4,
+            "elapsedMs": 126.589
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 10.0933
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 2496,
+            "depth": 8,
+            "timeouts": 4,
+            "elapsedMs": 127.0483000000001
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 9.247299999999939
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": false,
+          "winner": "new",
+          "plies": 23,
+          "newStats": {
+            "moves": 10,
+            "nodes": 4608,
+            "depth": 15,
+            "timeouts": 8,
+            "elapsedMs": 252.56010000000003
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 464,
+            "depth": 18,
+            "timeouts": 0,
+            "elapsedMs": 22.846199999999953
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": true,
+          "winner": "new",
+          "plies": 23,
+          "newStats": {
+            "moves": 10,
+            "nodes": 4768,
+            "depth": 15,
+            "timeouts": 8,
+            "elapsedMs": 254.73670000000027
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 464,
+            "depth": 18,
+            "timeouts": 0,
+            "elapsedMs": 21.58540000000005
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1760,
+            "depth": 6,
+            "timeouts": 3,
+            "elapsedMs": 91.40830000000005
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 6.698500000000195
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1728,
+            "depth": 6,
+            "timeouts": 3,
+            "elapsedMs": 92.52220000000011
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 7.285699999999906
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": false,
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 4640,
+            "depth": 14,
+            "timeouts": 7,
+            "elapsedMs": 217.48849999999993
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 408,
+            "depth": 16,
+            "timeouts": 0,
+            "elapsedMs": 21.028999999999996
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": true,
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 4544,
+            "depth": 14,
+            "timeouts": 7,
+            "elapsedMs": 218.88969999999972
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 408,
+            "depth": 16,
+            "timeouts": 0,
+            "elapsedMs": 20.97940000000017
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": false,
+          "winner": "draw",
+          "plies": 42,
+          "newStats": {
+            "moves": 19,
+            "nodes": 8002,
+            "depth": 42,
+            "timeouts": 10,
+            "elapsedMs": 378.7080000000001
+          },
+          "baselineStats": {
+            "moves": 19,
+            "nodes": 821,
+            "depth": 34,
+            "timeouts": 0,
+            "elapsedMs": 33.044899999999416
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": true,
+          "winner": "draw",
+          "plies": 42,
+          "newStats": {
+            "moves": 19,
+            "nodes": 7906,
+            "depth": 42,
+            "timeouts": 10,
+            "elapsedMs": 377.7586999999994
+          },
+          "baselineStats": {
+            "moves": 19,
+            "nodes": 821,
+            "depth": 34,
+            "timeouts": 0,
+            "elapsedMs": 33.184200000001056
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 2592,
+            "depth": 9,
+            "timeouts": 5,
+            "elapsedMs": 154.65669999999955
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 14.032999999999902
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 2528,
+            "depth": 9,
+            "timeouts": 5,
+            "elapsedMs": 154.48040000000037
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 14.150799999999435
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 2880,
+            "depth": 9,
+            "timeouts": 5,
+            "elapsedMs": 156.48469999999998
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 12.923399999999674
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 2784,
+            "depth": 9,
+            "timeouts": 5,
+            "elapsedMs": 159.72360000000026
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 13.6266999999998
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1952,
+            "depth": 6,
+            "timeouts": 3,
+            "elapsedMs": 91.63500000000067
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 6.073299999999563
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1945,
+            "depth": 6,
+            "timeouts": 3,
+            "elapsedMs": 92.35579999999982
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 6.282299999999395
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": false,
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 4658,
+            "depth": 15,
+            "timeouts": 7,
+            "elapsedMs": 220.32059999999956
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 15.126999999999498
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": true,
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 4562,
+            "depth": 14,
+            "timeouts": 7,
+            "elapsedMs": 215.64540000000034
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 15.21579999999949
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": false,
+          "winner": "new",
+          "plies": 19,
+          "newStats": {
+            "moves": 8,
+            "nodes": 3808,
+            "depth": 11,
+            "timeouts": 6,
+            "elapsedMs": 185.42119999999977
+          },
+          "baselineStats": {
+            "moves": 7,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 15.456299999998919
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": true,
+          "winner": "new",
+          "plies": 19,
+          "newStats": {
+            "moves": 8,
+            "nodes": 3776,
+            "depth": 11,
+            "timeouts": 6,
+            "elapsedMs": 184.28710000000046
+          },
+          "baselineStats": {
+            "moves": 7,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 14.94840000000022
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 2016,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 93.70329999999922
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 6.78650000000016
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 2016,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 93.44720000000052
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 7.498800000000301
+          }
+        }
+      ]
+    },
+    "torus": {
+      "size": "7x6",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 24,
+        "wins": 22,
+        "draws": 0,
+        "losses": 2,
+        "scoreRate": 0.917,
+        "averagePlies": 16.6,
+        "newEngine": {
+          "moves": 162,
+          "averageNodes": 199,
+          "averageDepth": 0.77,
+          "timeoutRate": 0.716,
+          "averageMs": 24.07
+        },
+        "baseline": {
+          "moves": 140,
+          "averageNodes": 43,
+          "averageDepth": 1.74,
+          "timeoutRate": 0,
+          "averageMs": 4.5
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 1312,
+            "depth": 5,
+            "timeouts": 5,
+            "elapsedMs": 161.5006999999987
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 32.90380000000005
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 1376,
+            "depth": 5,
+            "timeouts": 5,
+            "elapsedMs": 165.51779999999962
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 30.590799999999945
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 992,
+            "depth": 3,
+            "timeouts": 4,
+            "elapsedMs": 132.79239999999936
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 19.96770000000015
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 992,
+            "depth": 3,
+            "timeouts": 4,
+            "elapsedMs": 130.64059999999972
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 19.71650000000045
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": false,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 1003,
+            "depth": 5,
+            "timeouts": 4,
+            "elapsedMs": 130.1909999999998
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 31.471700000001874
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": true,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 992,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 131.11130000000048
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 31.92489999999998
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 960,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 105.5621000000001
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 14.395400000000336
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 960,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 102.72459999999955
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 13.733000000001084
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1184,
+            "depth": 3,
+            "timeouts": 4,
+            "elapsedMs": 136.23520000000008
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 26.700299999997696
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1152,
+            "depth": 3,
+            "timeouts": 4,
+            "elapsedMs": 132.39130000000023
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 26.428100000000086
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": false,
+          "winner": "new",
+          "plies": 23,
+          "newStats": {
+            "moves": 10,
+            "nodes": 1534,
+            "depth": 9,
+            "timeouts": 6,
+            "elapsedMs": 229.77880000000096
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 38.106799999999566
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": true,
+          "winner": "new",
+          "plies": 23,
+          "newStats": {
+            "moves": 10,
+            "nodes": 1566,
+            "depth": 9,
+            "timeouts": 6,
+            "elapsedMs": 232.9309000000012
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 38.00330000000031
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1632,
+            "depth": 6,
+            "timeouts": 5,
+            "elapsedMs": 171.1777000000002
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 26.58089999999993
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1696,
+            "depth": 6,
+            "timeouts": 5,
+            "elapsedMs": 171.03789999999935
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 25.744000000000597
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": false,
+          "winner": "baseline",
+          "plies": 30,
+          "newStats": {
+            "moves": 13,
+            "nodes": 1846,
+            "depth": 11,
+            "timeouts": 9,
+            "elapsedMs": 300.686700000002
+          },
+          "baselineStats": {
+            "moves": 13,
+            "nodes": 392,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 35.59940000000097
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": true,
+          "winner": "baseline",
+          "plies": 30,
+          "newStats": {
+            "moves": 13,
+            "nodes": 1746,
+            "depth": 11,
+            "timeouts": 9,
+            "elapsedMs": 305.8741000000027
+          },
+          "baselineStats": {
+            "moves": 13,
+            "nodes": 392,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 37.553499999999985
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": false,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 1408,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 128.23700000000008
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 20.17999999999938
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": true,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 1408,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 131.47809999999936
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 20.735099999999875
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": false,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 1248,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 122.25640000000021
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 20.23019999999906
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": true,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 1312,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 125.77760000000126
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 19.791199999999662
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": false,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 1600,
+            "depth": 6,
+            "timeouts": 6,
+            "elapsedMs": 197.42239999999947
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 30.41270000000077
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": true,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 1600,
+            "depth": 6,
+            "timeouts": 6,
+            "elapsedMs": 198.02570000000014
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 31.208599999998114
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": false,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 1344,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 127.6348999999991
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 19.877300000000105
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": true,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 1408,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 128.27059999999983
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 18.79620000000068
+          }
+        }
+      ]
+    },
+    "mobius": {
+      "size": "8x6",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 24,
+        "wins": 21,
+        "draws": 3,
+        "losses": 0,
+        "scoreRate": 0.938,
+        "averagePlies": 22.3,
+        "newEngine": {
+          "moves": 230,
+          "averageNodes": 343,
+          "averageDepth": 1.4,
+          "timeoutRate": 0.752,
+          "averageMs": 24.45
+        },
+        "baseline": {
+          "moves": 209,
+          "averageNodes": 49,
+          "averageDepth": 1.97,
+          "timeoutRate": 0,
+          "averageMs": 3.35
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "winner": "new",
+          "plies": 29,
+          "newStats": {
+            "moves": 13,
+            "nodes": 4416,
+            "depth": 16,
+            "timeouts": 10,
+            "elapsedMs": 317.6637000000028
+          },
+          "baselineStats": {
+            "moves": 12,
+            "nodes": 632,
+            "depth": 24,
+            "timeouts": 0,
+            "elapsedMs": 45.02089999999953
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "winner": "draw",
+          "plies": 48,
+          "newStats": {
+            "moves": 22,
+            "nodes": 8544,
+            "depth": 48,
+            "timeouts": 15,
+            "elapsedMs": 520.0970000000016
+          },
+          "baselineStats": {
+            "moves": 22,
+            "nodes": 1101,
+            "depth": 44,
+            "timeouts": 0,
+            "elapsedMs": 62.237599999996746
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "winner": "draw",
+          "plies": 48,
+          "newStats": {
+            "moves": 22,
+            "nodes": 8512,
+            "depth": 48,
+            "timeouts": 15,
+            "elapsedMs": 524.1699000000026
+          },
+          "baselineStats": {
+            "moves": 22,
+            "nodes": 1101,
+            "depth": 44,
+            "timeouts": 0,
+            "elapsedMs": 61.90980000000491
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "winner": "new",
+          "plies": 29,
+          "newStats": {
+            "moves": 13,
+            "nodes": 4363,
+            "depth": 16,
+            "timeouts": 10,
+            "elapsedMs": 308.9258000000027
+          },
+          "baselineStats": {
+            "moves": 12,
+            "nodes": 632,
+            "depth": 24,
+            "timeouts": 0,
+            "elapsedMs": 44.77320000000509
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1626,
+            "depth": 6,
+            "timeouts": 4,
+            "elapsedMs": 126.96259999999893
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 19.336599999998725
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1626,
+            "depth": 6,
+            "timeouts": 4,
+            "elapsedMs": 126.16540000000168
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 19.430999999998676
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1047,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 97.22479999999996
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 10.72689999999966
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1036,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 97.01009999999951
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 11.044600000001083
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": false,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 2102,
+            "depth": 8,
+            "timeouts": 5,
+            "elapsedMs": 158.91130000000157
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 17.009800000001633
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": true,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 1952,
+            "depth": 8,
+            "timeouts": 5,
+            "elapsedMs": 155.91139999999905
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 17.904899999997724
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": false,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 2432,
+            "depth": 8,
+            "timeouts": 6,
+            "elapsedMs": 198.59820000000218
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 22.554200000000492
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": true,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 2528,
+            "depth": 8,
+            "timeouts": 6,
+            "elapsedMs": 195.3357999999971
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 21.71100000000115
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": false,
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 3296,
+            "depth": 9,
+            "timeouts": 8,
+            "elapsedMs": 252.98129999999946
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 408,
+            "depth": 16,
+            "timeouts": 0,
+            "elapsedMs": 28.446799999999712
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": true,
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 3328,
+            "depth": 9,
+            "timeouts": 8,
+            "elapsedMs": 258.0665999999983
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 408,
+            "depth": 16,
+            "timeouts": 0,
+            "elapsedMs": 28.5049999999992
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": false,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 2336,
+            "depth": 7,
+            "timeouts": 6,
+            "elapsedMs": 188.80140000000029
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 22.936600000000908
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": true,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 2363,
+            "depth": 7,
+            "timeouts": 6,
+            "elapsedMs": 185.32350000000042
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 22.48239999999896
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": false,
+          "winner": "new",
+          "plies": 35,
+          "newStats": {
+            "moves": 16,
+            "nodes": 5955,
+            "depth": 21,
+            "timeouts": 13,
+            "elapsedMs": 414.61699999999655
+          },
+          "baselineStats": {
+            "moves": 15,
+            "nodes": 744,
+            "depth": 28,
+            "timeouts": 0,
+            "elapsedMs": 48.213300000001254
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": true,
+          "winner": "draw",
+          "plies": 48,
+          "newStats": {
+            "moves": 22,
+            "nodes": 8318,
+            "depth": 46,
+            "timeouts": 14,
+            "elapsedMs": 479.68290000000707
+          },
+          "baselineStats": {
+            "moves": 22,
+            "nodes": 1101,
+            "depth": 44,
+            "timeouts": 0,
+            "elapsedMs": 60.658500000008644
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": false,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 1408,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 129.5651999999991
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 14.148199999999633
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": true,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 1472,
+            "depth": 5,
+            "timeouts": 4,
+            "elapsedMs": 132.74219999999696
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 13.356800000001385
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": false,
+          "winner": "new",
+          "plies": 19,
+          "newStats": {
+            "moves": 8,
+            "nodes": 2528,
+            "depth": 8,
+            "timeouts": 6,
+            "elapsedMs": 187.54709999999795
+          },
+          "baselineStats": {
+            "moves": 7,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 26.73490000000129
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": true,
+          "winner": "new",
+          "plies": 19,
+          "newStats": {
+            "moves": 8,
+            "nodes": 2496,
+            "depth": 8,
+            "timeouts": 6,
+            "elapsedMs": 186.39069999999992
+          },
+          "baselineStats": {
+            "moves": 7,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 27.679299999999785
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": false,
+          "winner": "new",
+          "plies": 19,
+          "newStats": {
+            "moves": 8,
+            "nodes": 2605,
+            "depth": 8,
+            "timeouts": 6,
+            "elapsedMs": 188.2010999999984
+          },
+          "baselineStats": {
+            "moves": 7,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 26.965699999998833
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": true,
+          "winner": "new",
+          "plies": 19,
+          "newStats": {
+            "moves": 8,
+            "nodes": 2541,
+            "depth": 8,
+            "timeouts": 6,
+            "elapsedMs": 192.8677000000007
+          },
+          "baselineStats": {
+            "moves": 7,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 26.897100000000137
+          }
+        }
+      ]
+    },
+    "klein": {
+      "size": "7x6",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 24,
+        "wins": 20,
+        "draws": 0,
+        "losses": 4,
+        "scoreRate": 0.833,
+        "averagePlies": 18.7,
+        "newEngine": {
+          "moves": 186,
+          "averageNodes": 123,
+          "averageDepth": 0.49,
+          "timeoutRate": 0.677,
+          "averageMs": 23.34
+        },
+        "baseline": {
+          "moves": 166,
+          "averageNodes": 42,
+          "averageDepth": 1.66,
+          "timeoutRate": 0,
+          "averageMs": 6.66
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "winner": "new",
+          "plies": 23,
+          "newStats": {
+            "moves": 10,
+            "nodes": 1085,
+            "depth": 4,
+            "timeouts": 6,
+            "elapsedMs": 205.47649999999703
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 54.966800000005605
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "winner": "new",
+          "plies": 23,
+          "newStats": {
+            "moves": 10,
+            "nodes": 1085,
+            "depth": 4,
+            "timeouts": 6,
+            "elapsedMs": 204.97860000000037
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 54.67660000000069
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 928,
+            "depth": 3,
+            "timeouts": 4,
+            "elapsedMs": 129.37990000000173
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 40.248899999998685
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 928,
+            "depth": 3,
+            "timeouts": 4,
+            "elapsedMs": 125.31450000000223
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 38.44230000000243
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": false,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 992,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 133.98260000000118
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 29.888599999996586
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": true,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 992,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 142.23289999999906
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 31.348500000000058
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": false,
+          "winner": "baseline",
+          "plies": 22,
+          "newStats": {
+            "moves": 9,
+            "nodes": 1077,
+            "depth": 4,
+            "timeouts": 7,
+            "elapsedMs": 233.3068999999923
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 336,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 53.49180000000342
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": true,
+          "winner": "baseline",
+          "plies": 22,
+          "newStats": {
+            "moves": 9,
+            "nodes": 1045,
+            "depth": 4,
+            "timeouts": 7,
+            "elapsedMs": 239.6755000000012
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 336,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 56.133899999997084
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": false,
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 1248,
+            "depth": 6,
+            "timeouts": 7,
+            "elapsedMs": 250.63449999999284
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 53.466099999994185
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": true,
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 1248,
+            "depth": 6,
+            "timeouts": 7,
+            "elapsedMs": 255.29260000000068
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 55.34739999999874
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": false,
+          "winner": "new",
+          "plies": 25,
+          "newStats": {
+            "moves": 11,
+            "nodes": 1150,
+            "depth": 4,
+            "timeouts": 7,
+            "elapsedMs": 243.1732000000011
+          },
+          "baselineStats": {
+            "moves": 10,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 56.58030000000144
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": true,
+          "winner": "new",
+          "plies": 25,
+          "newStats": {
+            "moves": 11,
+            "nodes": 1246,
+            "depth": 4,
+            "timeouts": 7,
+            "elapsedMs": 235.49809999999343
+          },
+          "baselineStats": {
+            "moves": 10,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 51.83169999999882
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": false,
+          "winner": "new",
+          "plies": 25,
+          "newStats": {
+            "moves": 11,
+            "nodes": 846,
+            "depth": 3,
+            "timeouts": 6,
+            "elapsedMs": 211.58429999999498
+          },
+          "baselineStats": {
+            "moves": 10,
+            "nodes": 464,
+            "depth": 18,
+            "timeouts": 0,
+            "elapsedMs": 72.70329999999012
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": true,
+          "winner": "new",
+          "plies": 25,
+          "newStats": {
+            "moves": 11,
+            "nodes": 782,
+            "depth": 3,
+            "timeouts": 6,
+            "elapsedMs": 195.44440000000395
+          },
+          "baselineStats": {
+            "moves": 10,
+            "nodes": 464,
+            "depth": 18,
+            "timeouts": 0,
+            "elapsedMs": 71.28020000000106
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 640,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 105.79709999999977
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 20.217499999998836
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 640,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 108.74429999999847
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 21.296799999996438
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": false,
+          "winner": "baseline",
+          "plies": 18,
+          "newStats": {
+            "moves": 7,
+            "nodes": 864,
+            "depth": 3,
+            "timeouts": 5,
+            "elapsedMs": 177.51280000000042
+          },
+          "baselineStats": {
+            "moves": 7,
+            "nodes": 280,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 45.65859999999884
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": true,
+          "winner": "baseline",
+          "plies": 18,
+          "newStats": {
+            "moves": 7,
+            "nodes": 790,
+            "depth": 3,
+            "timeouts": 5,
+            "elapsedMs": 168.3314999999966
+          },
+          "baselineStats": {
+            "moves": 7,
+            "nodes": 280,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 47.59220000001005
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": false,
+          "winner": "new",
+          "plies": 19,
+          "newStats": {
+            "moves": 8,
+            "nodes": 879,
+            "depth": 4,
+            "timeouts": 5,
+            "elapsedMs": 162.30890000000363
+          },
+          "baselineStats": {
+            "moves": 7,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 50.416199999996024
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": true,
+          "winner": "new",
+          "plies": 19,
+          "newStats": {
+            "moves": 8,
+            "nodes": 943,
+            "depth": 4,
+            "timeouts": 5,
+            "elapsedMs": 170.14419999999882
+          },
+          "baselineStats": {
+            "moves": 7,
+            "nodes": 296,
+            "depth": 12,
+            "timeouts": 0,
+            "elapsedMs": 47.69800000000032
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": false,
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 1088,
+            "depth": 5,
+            "timeouts": 6,
+            "elapsedMs": 209.7798000000039
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 55.128099999998085
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": true,
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 1088,
+            "depth": 5,
+            "timeouts": 6,
+            "elapsedMs": 213.6569000000054
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 352,
+            "depth": 14,
+            "timeouts": 0,
+            "elapsedMs": 55.81550000000425
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 672,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 109.45839999999953
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 20.156700000003184
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 640,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 109.49539999999979
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 20.62960000000021
+          }
+        }
+      ]
+    },
+    "projective": {
+      "size": "8x8",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 24,
+        "wins": 24,
+        "draws": 0,
+        "losses": 0,
+        "scoreRate": 1,
+        "averagePlies": 13.3,
+        "newEngine": {
+          "moves": 124,
+          "averageNodes": 284,
+          "averageDepth": 1.57,
+          "timeoutRate": 0.677,
+          "averageMs": 23.1
+        },
+        "baseline": {
+          "moves": 100,
+          "averageNodes": 35,
+          "averageDepth": 1.6,
+          "timeoutRate": 0,
+          "averageMs": 2.17
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 1801,
+            "depth": 11,
+            "timeouts": 4,
+            "elapsedMs": 145.47649999999703
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 11.70430000000124
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 1869,
+            "depth": 12,
+            "timeouts": 4,
+            "elapsedMs": 144.63160000000062
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 10.471000000001368
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "winner": "new",
+          "plies": 9,
+          "newStats": {
+            "moves": 3,
+            "nodes": 768,
+            "depth": 4,
+            "timeouts": 2,
+            "elapsedMs": 65.1397999999972
+          },
+          "baselineStats": {
+            "moves": 2,
+            "nodes": 72,
+            "depth": 4,
+            "timeouts": 0,
+            "elapsedMs": 4.511799999996583
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "winner": "new",
+          "plies": 9,
+          "newStats": {
+            "moves": 3,
+            "nodes": 768,
+            "depth": 4,
+            "timeouts": 2,
+            "elapsedMs": 64.70679999999993
+          },
+          "baselineStats": {
+            "moves": 2,
+            "nodes": 72,
+            "depth": 4,
+            "timeouts": 0,
+            "elapsedMs": 4.451999999997497
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": false,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 2317,
+            "depth": 15,
+            "timeouts": 5,
+            "elapsedMs": 168.17839999999705
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 7.799899999998161
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": true,
+          "winner": "new",
+          "plies": 17,
+          "newStats": {
+            "moves": 7,
+            "nodes": 2381,
+            "depth": 15,
+            "timeouts": 5,
+            "elapsedMs": 176.11549999999625
+          },
+          "baselineStats": {
+            "moves": 6,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 8.060199999999895
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1693,
+            "depth": 9,
+            "timeouts": 4,
+            "elapsedMs": 127.76440000000002
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 11.497699999999895
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1725,
+            "depth": 9,
+            "timeouts": 4,
+            "elapsedMs": 129.48169999999664
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 11.222799999999552
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1407,
+            "depth": 9,
+            "timeouts": 3,
+            "elapsedMs": 115.89010000000053
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 11.24819999999454
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1407,
+            "depth": 9,
+            "timeouts": 3,
+            "elapsedMs": 118.32760000000053
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 11.320999999999913
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1834,
+            "depth": 10,
+            "timeouts": 4,
+            "elapsedMs": 155.24049999999625
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 11.499700000007579
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1898,
+            "depth": 10,
+            "timeouts": 4,
+            "elapsedMs": 159.98489999999947
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 10.983100000001286
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1197,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 96.6880999999994
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 8.373900000002322
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1261,
+            "depth": 6,
+            "timeouts": 3,
+            "elapsedMs": 96.58809999999721
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 7.898200000003271
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1248,
+            "depth": 7,
+            "timeouts": 3,
+            "elapsedMs": 92.43930000000182
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 7.564399999995658
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1183,
+            "depth": 7,
+            "timeouts": 3,
+            "elapsedMs": 93.23120000000563
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 7.835699999999633
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": false,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 1824,
+            "depth": 7,
+            "timeouts": 4,
+            "elapsedMs": 130.6374999999971
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 7.718000000000757
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": true,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 1824,
+            "depth": 7,
+            "timeouts": 4,
+            "elapsedMs": 130.445499999998
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 8.022600000000239
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1024,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 93.9445999999989
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 8.121299999998882
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 1024,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 94.60810000000129
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 8.030599999994593
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 896,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 97.51770000000033
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 8.250199999994948
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 864,
+            "depth": 5,
+            "timeouts": 3,
+            "elapsedMs": 92.37089999999807
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 8.047899999997753
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1211,
+            "depth": 6,
+            "timeouts": 4,
+            "elapsedMs": 124.3978000000061
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 14.468699999997625
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 1741,
+            "depth": 13,
+            "timeouts": 4,
+            "elapsedMs": 151.0864999999976
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 7.793900000000576
+          }
+        }
+      ]
+    },
+    "sphere": {
+      "size": "7x7",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 24,
+        "wins": 22,
+        "draws": 0,
+        "losses": 2,
+        "scoreRate": 0.917,
+        "averagePlies": 11.9,
+        "newEngine": {
+          "moves": 106,
+          "averageNodes": 140,
+          "averageDepth": 0.72,
+          "timeoutRate": 0.755,
+          "averageMs": 27.59
+        },
+        "baseline": {
+          "moves": 84,
+          "averageNodes": 39,
+          "averageDepth": 1.76,
+          "timeoutRate": 0,
+          "averageMs": 6.32
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 544,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 109.72589999999764
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 72,
+            "depth": 4,
+            "timeouts": 0,
+            "elapsedMs": 9.938200000004144
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 544,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 118.34480000000622
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 72,
+            "depth": 4,
+            "timeouts": 0,
+            "elapsedMs": 10.9304000000011
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "winner": "new",
+          "plies": 9,
+          "newStats": {
+            "moves": 3,
+            "nodes": 352,
+            "depth": 2,
+            "timeouts": 2,
+            "elapsedMs": 65.03729999999632
+          },
+          "baselineStats": {
+            "moves": 2,
+            "nodes": 72,
+            "depth": 4,
+            "timeouts": 0,
+            "elapsedMs": 11.897899999999936
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "winner": "new",
+          "plies": 9,
+          "newStats": {
+            "moves": 3,
+            "nodes": 352,
+            "depth": 2,
+            "timeouts": 2,
+            "elapsedMs": 63.93100000000413
+          },
+          "baselineStats": {
+            "moves": 2,
+            "nodes": 72,
+            "depth": 4,
+            "timeouts": 0,
+            "elapsedMs": 11.9262000000017
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 928,
+            "depth": 5,
+            "timeouts": 5,
+            "elapsedMs": 183.81620000000476
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 38.59339999999793
+          }
+        },
+        {
+          "opening": 2,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 960,
+            "depth": 5,
+            "timeouts": 5,
+            "elapsedMs": 199.77940000000308
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 39.56660000000193
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 960,
+            "depth": 5,
+            "timeouts": 5,
+            "elapsedMs": 199.92829999999958
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 39.05759999999282
+          }
+        },
+        {
+          "opening": 3,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 960,
+            "depth": 5,
+            "timeouts": 5,
+            "elapsedMs": 203.5544000000009
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 240,
+            "depth": 10,
+            "timeouts": 0,
+            "elapsedMs": 40.47269999999844
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 608,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 105.70699999999852
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 22.11949999999706
+          }
+        },
+        {
+          "opening": 4,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 608,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 106.14379999999801
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 22.22989999999845
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": false,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 704,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 131.74469999999565
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 20.60059999999794
+          }
+        },
+        {
+          "opening": 5,
+          "swapped": true,
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 736,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 138.41549999999916
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 20.973200000004
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": false,
+          "winner": "new",
+          "plies": 9,
+          "newStats": {
+            "moves": 3,
+            "nodes": 320,
+            "depth": 2,
+            "timeouts": 2,
+            "elapsedMs": 70.04450000000361
+          },
+          "baselineStats": {
+            "moves": 2,
+            "nodes": 72,
+            "depth": 4,
+            "timeouts": 0,
+            "elapsedMs": 10.861300000000483
+          }
+        },
+        {
+          "opening": 6,
+          "swapped": true,
+          "winner": "new",
+          "plies": 9,
+          "newStats": {
+            "moves": 3,
+            "nodes": 320,
+            "depth": 2,
+            "timeouts": 2,
+            "elapsedMs": 68.00980000000345
+          },
+          "baselineStats": {
+            "moves": 2,
+            "nodes": 72,
+            "depth": 4,
+            "timeouts": 0,
+            "elapsedMs": 10.853100000000268
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": false,
+          "winner": "baseline",
+          "plies": 12,
+          "newStats": {
+            "moves": 4,
+            "nodes": 512,
+            "depth": 2,
+            "timeouts": 3,
+            "elapsedMs": 113.71349999999802
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 168,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 28.670900000000984
+          }
+        },
+        {
+          "opening": 7,
+          "swapped": true,
+          "winner": "baseline",
+          "plies": 12,
+          "newStats": {
+            "moves": 4,
+            "nodes": 480,
+            "depth": 2,
+            "timeouts": 3,
+            "elapsedMs": 109.93360000000393
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 168,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 29.023400000001857
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 512,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 93.91999999999825
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 72,
+            "depth": 4,
+            "timeouts": 0,
+            "elapsedMs": 10.556899999995949
+          }
+        },
+        {
+          "opening": 8,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 544,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 102.37620000000243
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 72,
+            "depth": 4,
+            "timeouts": 0,
+            "elapsedMs": 10.588700000000244
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 544,
+            "depth": 2,
+            "timeouts": 3,
+            "elapsedMs": 121.37169999999969
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 22.265599999995175
+          }
+        },
+        {
+          "opening": 9,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 544,
+            "depth": 2,
+            "timeouts": 3,
+            "elapsedMs": 117.35819999999512
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 21.08230000000185
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": false,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 736,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 137.60670000000027
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 28.629400000001624
+          }
+        },
+        {
+          "opening": 10,
+          "swapped": true,
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 704,
+            "depth": 4,
+            "timeouts": 4,
+            "elapsedMs": 133.53869999999733
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 184,
+            "depth": 8,
+            "timeouts": 0,
+            "elapsedMs": 29.715100000001257
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": false,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 672,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 116.24539999999979
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 20.53389999999854
+          }
+        },
+        {
+          "opening": 11,
+          "swapped": true,
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 672,
+            "depth": 3,
+            "timeouts": 3,
+            "elapsedMs": 114.4952000000012
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 128,
+            "depth": 6,
+            "timeouts": 0,
+            "elapsedMs": 19.965500000002066
+          }
+        }
+      ]
+    }
+  },
+  "planarRapfiControl": {
+    "date": "2026-10-17",
+    "status": "browser-worker-verified",
+    "mode": "plane",
+    "board": "15x15 freestyle Gomoku",
+    "difficulty": "max",
+    "configuredBudgetMs": 2600,
+    "engine": "Rapfi WASM + freestyle NNUE",
+    "moves": [
+      {
+        "ply": 1,
+        "side": "black / engine",
+        "cell": "H8",
+        "elapsedMs": 260,
+        "depth": null,
+        "nodes": null,
+        "note": "Empty-board opening; the engine returned the center."
+      },
+      {
+        "ply": 3,
+        "side": "black / engine",
+        "cell": "G6",
+        "elapsedMs": 2785,
+        "depth": 17,
+        "nodes": 72950,
+        "note": "After the human's H7 reply; the configured 2600 ms budget was exceeded by 185 ms."
+      }
+    ],
+    "verification": "The local browser page loaded Rapfi and made legal moves through its Worker. This is a two-move planar control sample, not a win-rate measurement.",
+    "topologyParity": "not measured; this planar control does not establish strength on wrapped or non-orientable boards"
+  }
+}

@@ -1,0 +1,1818 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T16:02:58.341Z",
+  "seed": 20261017,
+  "pairsPerTopology": 2,
+  "gamesPerTopology": 4,
+  "difficulty": "max",
+  "budgetMsPerMove": 300,
+  "rules": "自由五子棋；各拓扑使用其自身唯一五连窗口；双方同一拓扑、相同单步预算",
+  "engines": {
+    "new": "topology-native iterative-deepening alpha-beta/PVS + incremental window/winning-move/forcing indexes + transposition table + forcing quiescence",
+    "baseline": "ai-before-upgrade.mjs exact snapshot, used as the previous topology-search baseline",
+    "rapfiParity": "not measured; planar Rapfi is not a same-topology reference for these wrapped boards"
+  },
+  "model": null,
+  "topologies": {
+    "cylinder": {
+      "size": "7x6",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 4,
+        "wins": 4,
+        "draws": 0,
+        "losses": 0,
+        "scoreRate": 1,
+        "byNewEngineSide": {
+          "first": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          },
+          "second": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          }
+        },
+        "averagePlies": 13,
+        "newEngine": {
+          "moves": 20,
+          "averageNodes": 34269,
+          "averageDepth": 3.65,
+          "medianCompletedDepth": 4,
+          "timeoutRate": 0.8,
+          "nodeLimitRate": 0,
+          "nodeLimit": 600000,
+          "nodesPerSecond": 142621,
+          "averageMs": 240.28
+        },
+        "baseline": {
+          "moves": 16,
+          "averageNodes": 1030,
+          "averageDepth": 4,
+          "medianCompletedDepth": 4,
+          "timeoutRate": 0,
+          "nodeLimitRate": 0,
+          "nodeLimit": null,
+          "nodesPerSecond": 14125,
+          "averageMs": 72.92
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 167360,
+            "depth": 18,
+            "depths": [
+              4,
+              4,
+              4,
+              6,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              6
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 4,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1201.8507
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 4270,
+            "depth": 16,
+            "depths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 299.43060000000014
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 161408,
+            "depth": 18,
+            "depths": [
+              4,
+              4,
+              4,
+              6,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              6
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 4,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1201.6695
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 4270,
+            "depth": 16,
+            "depths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 297.2054000000005
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 167360,
+            "depth": 19,
+            "depths": [
+              4,
+              4,
+              4,
+              7,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              7
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 4,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1200.7581999999993
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 3970,
+            "depth": 16,
+            "depths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 287.04640000000063
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 189248,
+            "depth": 18,
+            "depths": [
+              4,
+              4,
+              4,
+              6,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              6
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 4,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1201.3054999999995
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 3970,
+            "depth": 16,
+            "depths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 283.03030000000035
+          }
+        }
+      ]
+    },
+    "torus": {
+      "size": "7x6",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 4,
+        "wins": 4,
+        "draws": 0,
+        "losses": 0,
+        "scoreRate": 1,
+        "byNewEngineSide": {
+          "first": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          },
+          "second": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          }
+        },
+        "averagePlies": 18,
+        "newEngine": {
+          "moves": 30,
+          "averageNodes": 20299,
+          "averageDepth": 3.2,
+          "medianCompletedDepth": 4.5,
+          "timeoutRate": 0.667,
+          "nodeLimitRate": 0,
+          "nodeLimit": 600000,
+          "nodesPerSecond": 101367,
+          "averageMs": 200.25
+        },
+        "baseline": {
+          "moves": 26,
+          "averageNodes": 839,
+          "averageDepth": 3.23,
+          "medianCompletedDepth": 4,
+          "timeoutRate": 0.154,
+          "nodeLimitRate": 0,
+          "nodeLimit": null,
+          "nodesPerSecond": 6734,
+          "averageMs": 124.62
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 188384,
+            "depth": 28,
+            "depths": [
+              4,
+              4,
+              5,
+              4,
+              0,
+              0,
+              5,
+              6,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              5,
+              4,
+              5,
+              6
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 6,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1802.6770000000006
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 5667,
+            "depth": 23,
+            "depths": [
+              3,
+              4,
+              0,
+              4,
+              4,
+              4,
+              0,
+              4
+            ],
+            "completedDepths": [
+              3,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 1,
+            "nodeLimitStops": 0,
+            "elapsedMs": 836.5581999999986
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 21,
+          "newStats": {
+            "moves": 9,
+            "nodes": 190528,
+            "depth": 28,
+            "depths": [
+              4,
+              4,
+              5,
+              4,
+              0,
+              0,
+              5,
+              6,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              5,
+              4,
+              5,
+              6
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 6,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1801.9708000000028
+          },
+          "baselineStats": {
+            "moves": 8,
+            "nodes": 5667,
+            "depth": 23,
+            "depths": [
+              3,
+              4,
+              0,
+              4,
+              4,
+              4,
+              0,
+              4
+            ],
+            "completedDepths": [
+              3,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 1,
+            "nodeLimitStops": 0,
+            "elapsedMs": 825.9683000000005
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 117216,
+            "depth": 20,
+            "depths": [
+              4,
+              4,
+              0,
+              5,
+              7,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              5,
+              7
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 4,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1201.5092999999997
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 5258,
+            "depth": 19,
+            "depths": [
+              3,
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              3,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 1,
+            "nodeLimitStops": 0,
+            "elapsedMs": 784.9529000000002
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 112832,
+            "depth": 20,
+            "depths": [
+              4,
+              4,
+              0,
+              5,
+              7,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              5,
+              7
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 4,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1201.3287999999993
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 5226,
+            "depth": 19,
+            "depths": [
+              3,
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              3,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 1,
+            "nodeLimitStops": 0,
+            "elapsedMs": 792.5228000000006
+          }
+        }
+      ]
+    },
+    "mobius": {
+      "size": "8x6",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 4,
+        "wins": 4,
+        "draws": 0,
+        "losses": 0,
+        "scoreRate": 1,
+        "byNewEngineSide": {
+          "first": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          },
+          "second": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          }
+        },
+        "averagePlies": 23,
+        "newEngine": {
+          "moves": 40,
+          "averageNodes": 33811,
+          "averageDepth": 3.5,
+          "medianCompletedDepth": 4,
+          "timeoutRate": 0.8,
+          "nodeLimitRate": 0,
+          "nodeLimit": 600000,
+          "nodesPerSecond": 140755,
+          "averageMs": 240.21
+        },
+        "baseline": {
+          "moves": 36,
+          "averageNodes": 1378,
+          "averageDepth": 4,
+          "medianCompletedDepth": 4,
+          "timeoutRate": 0,
+          "nodeLimitRate": 0,
+          "nodeLimit": null,
+          "nodesPerSecond": 9807,
+          "averageMs": 140.52
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 23,
+          "newStats": {
+            "moves": 10,
+            "nodes": 328064,
+            "depth": 35,
+            "depths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              0,
+              5,
+              5,
+              5,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 8,
+            "nodeLimitStops": 0,
+            "elapsedMs": 2401.6317000000035
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 12403,
+            "depth": 36,
+            "depths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1263.5260000000053
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 23,
+          "newStats": {
+            "moves": 10,
+            "nodes": 345536,
+            "depth": 35,
+            "depths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              0,
+              5,
+              5,
+              5,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 8,
+            "nodeLimitStops": 0,
+            "elapsedMs": 2402.0665999999947
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 12403,
+            "depth": 36,
+            "depths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1230.1059000000132
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 23,
+          "newStats": {
+            "moves": 10,
+            "nodes": 338176,
+            "depth": 35,
+            "depths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              0,
+              5,
+              5,
+              5,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 8,
+            "nodeLimitStops": 0,
+            "elapsedMs": 2402.6350999999995
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 12403,
+            "depth": 36,
+            "depths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1301.0869999999995
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 23,
+          "newStats": {
+            "moves": 10,
+            "nodes": 340672,
+            "depth": 35,
+            "depths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              0,
+              5,
+              5,
+              5,
+              0
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 8,
+            "nodeLimitStops": 0,
+            "elapsedMs": 2402.171199999997
+          },
+          "baselineStats": {
+            "moves": 9,
+            "nodes": 12403,
+            "depth": 36,
+            "depths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1264.0636999999915
+          }
+        }
+      ]
+    },
+    "klein": {
+      "size": "7x6",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 4,
+        "wins": 4,
+        "draws": 0,
+        "losses": 0,
+        "scoreRate": 1,
+        "byNewEngineSide": {
+          "first": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          },
+          "second": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          }
+        },
+        "averagePlies": 13,
+        "newEngine": {
+          "moves": 20,
+          "averageNodes": 19709,
+          "averageDepth": 2.8,
+          "medianCompletedDepth": 4,
+          "timeoutRate": 0.7,
+          "nodeLimitRate": 0,
+          "nodeLimit": 600000,
+          "nodesPerSecond": 93700,
+          "averageMs": 210.34
+        },
+        "baseline": {
+          "moves": 16,
+          "averageNodes": 864,
+          "averageDepth": 3.75,
+          "medianCompletedDepth": 4,
+          "timeoutRate": 0.25,
+          "nodeLimitRate": 0,
+          "nodeLimit": null,
+          "nodesPerSecond": 4483,
+          "averageMs": 192.66
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 86176,
+            "depth": 11,
+            "depths": [
+              3,
+              3,
+              5,
+              0
+            ],
+            "completedDepths": [
+              3,
+              3,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 3,
+            "nodeLimitStops": 0,
+            "elapsedMs": 901.0310999999965
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 2535,
+            "depth": 11,
+            "depths": [
+              3,
+              4,
+              4
+            ],
+            "completedDepths": [
+              3,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 1,
+            "nodeLimitStops": 0,
+            "elapsedMs": 572.6569000000018
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 85824,
+            "depth": 11,
+            "depths": [
+              3,
+              3,
+              5,
+              0
+            ],
+            "completedDepths": [
+              3,
+              3,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 3,
+            "nodeLimitStops": 0,
+            "elapsedMs": 901.4536999999982
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 2535,
+            "depth": 11,
+            "depths": [
+              3,
+              4,
+              4
+            ],
+            "completedDepths": [
+              3,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 1,
+            "nodeLimitStops": 0,
+            "elapsedMs": 568.3629999999976
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 113344,
+            "depth": 17,
+            "depths": [
+              3,
+              4,
+              0,
+              5,
+              5,
+              0
+            ],
+            "completedDepths": [
+              3,
+              4,
+              5,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 4,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1202.310000000005
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 4359,
+            "depth": 19,
+            "depths": [
+              3,
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              3,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 1,
+            "nodeLimitStops": 0,
+            "elapsedMs": 964.9737999999998
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 108832,
+            "depth": 17,
+            "depths": [
+              3,
+              4,
+              0,
+              5,
+              5,
+              0
+            ],
+            "completedDepths": [
+              3,
+              4,
+              5,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 4,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1201.9920999999886
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 4391,
+            "depth": 19,
+            "depths": [
+              3,
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              3,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 1,
+            "nodeLimitStops": 0,
+            "elapsedMs": 976.6408999999912
+          }
+        }
+      ]
+    },
+    "projective": {
+      "size": "8x8",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 4,
+        "wins": 4,
+        "draws": 0,
+        "losses": 0,
+        "scoreRate": 1,
+        "byNewEngineSide": {
+          "first": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          },
+          "second": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          }
+        },
+        "averagePlies": 14,
+        "newEngine": {
+          "moves": 22,
+          "averageNodes": 20006,
+          "averageDepth": 5.23,
+          "medianCompletedDepth": 7,
+          "timeoutRate": 0.636,
+          "nodeLimitRate": 0,
+          "nodeLimit": 600000,
+          "nodesPerSecond": 99690,
+          "averageMs": 200.69
+        },
+        "baseline": {
+          "moves": 18,
+          "averageNodes": 986,
+          "averageDepth": 4,
+          "medianCompletedDepth": 4,
+          "timeoutRate": 0,
+          "nodeLimitRate": 0,
+          "nodeLimit": null,
+          "nodesPerSecond": 13996,
+          "averageMs": 70.42
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 88055,
+            "depth": 30,
+            "depths": [
+              6,
+              7,
+              8,
+              0,
+              9,
+              0
+            ],
+            "completedDepths": [
+              6,
+              7,
+              8,
+              9
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 3,
+            "nodeLimitStops": 0,
+            "elapsedMs": 995.2462000000014
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 5332,
+            "depth": 20,
+            "depths": [
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 413.73309999999765
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 15,
+          "newStats": {
+            "moves": 6,
+            "nodes": 90967,
+            "depth": 30,
+            "depths": [
+              6,
+              7,
+              8,
+              0,
+              9,
+              0
+            ],
+            "completedDepths": [
+              6,
+              7,
+              8,
+              9
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 3,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1017.7220000000016
+          },
+          "baselineStats": {
+            "moves": 5,
+            "nodes": 5332,
+            "depth": 20,
+            "depths": [
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 375.123700000011
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 132576,
+            "depth": 27,
+            "depths": [
+              5,
+              7,
+              7,
+              8,
+              0
+            ],
+            "completedDepths": [
+              5,
+              7,
+              7,
+              8
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 4,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1201.0042000000103
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 3539,
+            "depth": 16,
+            "depths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 239.56969999999274
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 13,
+          "newStats": {
+            "moves": 5,
+            "nodes": 128544,
+            "depth": 28,
+            "depths": [
+              6,
+              7,
+              7,
+              8,
+              0
+            ],
+            "completedDepths": [
+              6,
+              7,
+              7,
+              8
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 4,
+            "nodeLimitStops": 0,
+            "elapsedMs": 1201.1388999999908
+          },
+          "baselineStats": {
+            "moves": 4,
+            "nodes": 3539,
+            "depth": 16,
+            "depths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4,
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 239.2227999999959
+          }
+        }
+      ]
+    },
+    "sphere": {
+      "size": "7x7",
+      "tacticalChecks": {
+        "immediateWin": true,
+        "forcedBlock": true,
+        "doubleThreat": true,
+        "seamWin": true
+      },
+      "summary": {
+        "games": 4,
+        "wins": 4,
+        "draws": 0,
+        "losses": 0,
+        "scoreRate": 1,
+        "byNewEngineSide": {
+          "first": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          },
+          "second": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 0
+          }
+        },
+        "averagePlies": 10,
+        "newEngine": {
+          "moves": 14,
+          "averageNodes": 17479,
+          "averageDepth": 3.29,
+          "medianCompletedDepth": 5,
+          "timeoutRate": 0.714,
+          "nodeLimitRate": 0,
+          "nodeLimit": 600000,
+          "nodesPerSecond": 81426,
+          "averageMs": 214.66
+        },
+        "baseline": {
+          "moves": 10,
+          "averageNodes": 471,
+          "averageDepth": 3.2,
+          "medianCompletedDepth": 4,
+          "timeoutRate": 0,
+          "nodeLimitRate": 0,
+          "nodeLimit": null,
+          "nodesPerSecond": 4585,
+          "averageMs": 102.72
+        }
+      },
+      "games": [
+        {
+          "opening": 0,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 67328,
+            "depth": 14,
+            "depths": [
+              4,
+              5,
+              5,
+              0
+            ],
+            "completedDepths": [
+              4,
+              5,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 3,
+            "nodeLimitStops": 0,
+            "elapsedMs": 901.6223000000027
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 1207,
+            "depth": 8,
+            "depths": [
+              4,
+              0,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 250.15619999999035
+          }
+        },
+        {
+          "opening": 0,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 11,
+          "newStats": {
+            "moves": 4,
+            "nodes": 73088,
+            "depth": 14,
+            "depths": [
+              4,
+              5,
+              5,
+              0
+            ],
+            "completedDepths": [
+              4,
+              5,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 3,
+            "nodeLimitStops": 0,
+            "elapsedMs": 901.6040999999968
+          },
+          "baselineStats": {
+            "moves": 3,
+            "nodes": 1207,
+            "depth": 8,
+            "depths": [
+              4,
+              0,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 238.29219999999623
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": false,
+          "newPlayer": 1,
+          "newPlayerSide": "first",
+          "winner": "new",
+          "plies": 9,
+          "newStats": {
+            "moves": 3,
+            "nodes": 52512,
+            "depth": 9,
+            "depths": [
+              4,
+              5,
+              0
+            ],
+            "completedDepths": [
+              4,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 2,
+            "nodeLimitStops": 0,
+            "elapsedMs": 601.220699999998
+          },
+          "baselineStats": {
+            "moves": 2,
+            "nodes": 1148,
+            "depth": 8,
+            "depths": [
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 266.13699999999517
+          }
+        },
+        {
+          "opening": 1,
+          "swapped": true,
+          "newPlayer": -1,
+          "newPlayerSide": "second",
+          "winner": "new",
+          "plies": 9,
+          "newStats": {
+            "moves": 3,
+            "nodes": 51776,
+            "depth": 9,
+            "depths": [
+              4,
+              5,
+              0
+            ],
+            "completedDepths": [
+              4,
+              5
+            ],
+            "nodeLimits": [
+              600000,
+              600000,
+              600000
+            ],
+            "timeouts": 2,
+            "nodeLimitStops": 0,
+            "elapsedMs": 600.7864999999947
+          },
+          "baselineStats": {
+            "moves": 2,
+            "nodes": 1148,
+            "depth": 8,
+            "depths": [
+              4,
+              4
+            ],
+            "completedDepths": [
+              4,
+              4
+            ],
+            "nodeLimits": [],
+            "timeouts": 0,
+            "nodeLimitStops": 0,
+            "elapsedMs": 272.5697999999902
+          }
+        }
+      ]
+    }
+  },
+  "planarRapfiControl": {
+    "status": "not-run-in-node-benchmark",
+    "note": "Rapfi is shipped and invoked through a browser Worker; this paired benchmark compares topology engines only and does not claim Rapfi parity."
+  }
+}

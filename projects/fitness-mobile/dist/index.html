@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#202b27"><meta name="description" content="12周肩背与腰腹训练记录，适配无冰箱宿舍、小煮锅和每周两次采购。">
+  <title>肩背计划 · 宿舍执行版</title><link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">跳至内容</a>
+  <aside class="sidebar"><a class="brand" href="#today"><span class="brand-icon">∥</span><span>肩背计划<small>12 WEEK ROUTINE</small></span></a><div class="sidebar-caption">宽肩 · 细腰 · 胸肌与腹肌</div><nav id="desktop-nav" aria-label="主导航"></nav><div class="sidebar-foot"><span class="status-dot"></span>仅在当前浏览器保存<small>换手机前，记得导出备份</small><button class="text-button" data-action="settings">计划设置与数据</button></div></aside>
+  <div class="shell"><header class="topbar"><a class="mobile-brand" href="#today">肩背计划<span>宿舍版</span></a><div class="edition"><span class="status-dot"></span>小煮锅 / 无冰箱 / 一周两采</div><button class="settings-button" data-action="settings" aria-label="打开计划设置">计划设置 <span aria-hidden="true">↗</span></button></header>
+  <main id="main"><div class="page-heading"><div><p class="eyebrow" id="page-kicker">YOUR DAILY ROUTINE</p><h1 id="page-title">把今天练好，吃好。</h1><p class="subhead" id="page-desc">把大目标，拆成今天能完成的小事。</p></div><div class="date-wrap"><button class="date-arrow" data-action="prev-date" aria-label="前一天">‹</button><label class="sr-only" for="selected-date">查看日期</label><input type="date" id="selected-date"><button class="date-arrow" data-action="next-date" aria-label="后一天">›</button><button class="today-link" data-action="today">今天</button></div></div>
+  <div id="storage-warning" class="notice danger" hidden></div><div id="content"></div><footer class="page-footer">为你的日常设计 · 食物数值为估算，以包装标签为准。<span>19岁 · 189cm · 起始85kg</span></footer></main></div>
+  <nav class="bottom-nav" id="mobile-nav" aria-label="手机导航"></nav>
+  <dialog id="settings-dialog" aria-labelledby="settings-title"><div class="dialog-top"><div><p class="eyebrow">MAKE IT YOURS</p><h2 id="settings-title">按你的时间来</h2></div><button class="icon-button" data-action="close-settings" aria-label="关闭设置">×</button></div><div id="settings-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div><input type="file" id="import-file" accept="application/json,.json" hidden>
+  <noscript>请开启 JavaScript 使用记录与实时反馈。无冰箱时只做当餐量，常温食品以包装储存说明为准。</noscript>
+  <script type="module" src="app.mjs"></script>
+</body></html>

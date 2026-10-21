@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-19",
+  "contentNote": "中文要领为本项目重新概括；参考链接仅提供原教程，不复制其照片或视频。",
+  "originalIllustrations": {
+    "author": "本项目原创（Codex 绘制）",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "scope": "*-equipment.svg 和 *-positions.svg",
+    "note": "简化辅助示意，不冒充专业真人教学图。"
+  },
+  "mediaLicenseBasis": "每个视频使用 wger exerciseinfo 内独立 video 对象的 license=2 与 license_author=Goulart；license=2 由 wger /api/v2/license/ 映射为 CC BY-SA 4.0；不使用数据库总体许可替代媒体许可。",
+  "licenseRegistryUrl": "https://wger.de/api/v2/license/",
+  "media": [
+    {
+      "exercise": "lateral",
+      "exerciseId": 348,
+      "videoId": 6,
+      "src": "./assets/exercises/lateral-demo.mp4",
+      "poster": "./assets/exercises/lateral-poster.jpg",
+      "sourceRecord": {
+        "id": 6,
+        "uuid": "de69928a-8a35-4096-821c-1f46de5e0e03",
+        "exercise": 348,
+        "video": "https://wger.de/media/exercise-video/348/de69928a-8a35-4096-821c-1f46de5e0e03.MOV",
+        "is_main": false,
+        "size": 43874331,
+        "duration": "18.26",
+        "width": 1920,
+        "height": 1080,
+        "codec": "hevc",
+        "codec_long": "H.265 / HEVC (High Efficiency Video Coding)",
+        "license": 2,
+        "license_title": "",
+        "license_object_url": "",
+        "license_author": "Goulart",
+        "license_author_url": "",
+        "license_derivative_source_url": "",
+        "author_history": [
+          "Goulart"
+        ]
+      },
+      "author": "Goulart",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceUrl": "https://wger.de/media/exercise-video/348/de69928a-8a35-4096-821c-1f46de5e0e03.MOV",
+      "metadataUrl": "https://wger.de/api/v2/exerciseinfo/348/",
+      "mediaId": 6,
+      "changes": "原片完整时长；HLG/Dolby Vision 已转为 SDR BT.709、H.264；画面等比缩至宽640像素（libx264 slow、CRF 28），保留原AAC 64kbps音频与帧率；无裁切、无剪辑、无变速。"
+    },
+    {
+      "exercise": "legcurl",
+      "exerciseId": 366,
+      "videoId": 37,
+      "src": "./assets/exercises/legcurl-demo.mp4",
+      "poster": "./assets/exercises/legcurl-poster.jpg",
+      "sourceRecord": {
+        "id": 37,
+        "uuid": "43df4b79-d4c3-4fbf-bcb5-e0d825b84120",
+        "exercise": 366,
+        "video": "https://wger.de/media/exercise-video/366/43df4b79-d4c3-4fbf-bcb5-e0d825b84120.MOV",
+        "is_main": false,
+        "size": 72266814,
+        "duration": "24.89",
+        "width": 1920,
+        "height": 1080,
+        "codec": "hevc",
+        "codec_long": "H.265 / HEVC (High Efficiency Video Coding)",
+        "license": 2,
+        "license_title": "",
+        "license_object_url": "",
+        "license_author": "Goulart",
+        "license_author_url": "",
+        "license_derivative_source_url": "",
+        "author_history": [
+          "Goulart"
+        ]
+      },
+      "author": "Goulart",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceUrl": "https://wger.de/media/exercise-video/366/43df4b79-d4c3-4fbf-bcb5-e0d825b84120.MOV",
+      "metadataUrl": "https://wger.de/api/v2/exerciseinfo/366/",
+      "mediaId": 37,
+      "changes": "原片完整时长；HLG/Dolby Vision 已转为 SDR BT.709、H.264；画面等比缩至宽640像素（libx264 slow、CRF 28），保留原AAC 64kbps音频与帧率；无裁切、无剪辑、无变速。"
+    },
+    {
+      "exercise": "shoulder",
+      "exerciseId": 543,
+      "videoId": 11,
+      "src": "./assets/exercises/shoulder-demo.mp4",
+      "poster": "./assets/exercises/shoulder-poster.jpg",
+      "sourceRecord": {
+        "id": 11,
+        "uuid": "dbfd396b-1aab-4a64-a50b-2c31ff0a2cf7",
+        "exercise": 543,
+        "video": "https://wger.de/media/exercise-video/543/dbfd396b-1aab-4a64-a50b-2c31ff0a2cf7.MOV",
+        "is_main": false,
+        "size": 23511495,
+        "duration": "12.27",
+        "width": 1920,
+        "height": 1080,
+        "codec": "hevc",
+        "codec_long": "H.265 / HEVC (High Efficiency Video Coding)",
+        "license": 2,
+        "license_title": "",
+        "license_object_url": "",
+        "license_author": "Goulart",
+        "license_author_url": "",
+        "license_derivative_source_url": "",
+        "author_history": [
+          "Goulart"
+        ]
+      },
+      "author": "Goulart",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceUrl": "https://wger.de/media/exercise-video/543/dbfd396b-1aab-4a64-a50b-2c31ff0a2cf7.MOV",
+      "metadataUrl": "https://wger.de/api/v2/exerciseinfo/543/",
+      "mediaId": 11,
+      "changes": "原片完整时长；HLG/Dolby Vision 已转为 SDR BT.709、H.264；画面等比缩至宽640像素（libx264 slow、CRF 28），保留原AAC 64kbps音频与帧率；无裁切、无剪辑、无变速。"
+    },
+    {
+      "exercise": "row",
+      "exerciseId": 512,
+      "videoId": 1,
+      "src": "./assets/exercises/row-demo.mp4",
+      "poster": "./assets/exercises/row-poster.jpg",
+      "sourceRecord": {
+        "id": 1,
+        "uuid": "fff4c294-93f0-4926-b3a2-bf59ad4afaa5",
+        "exercise": 512,
+        "video": "https://wger.de/media/exercise-video/512/fff4c294-93f0-4926-b3a2-bf59ad4afaa5.MOV",
+        "is_main": false,
+        "size": 34332925,
+        "duration": "10.49",
+        "width": 1920,
+        "height": 1080,
+        "codec": "hevc",
+        "codec_long": "H.265 / HEVC (High Efficiency Video Coding)",
+        "license": 2,
+        "license_title": "",
+        "license_object_url": "",
+        "license_author": "Goulart",
+        "license_author_url": "",
+        "license_derivative_source_url": "",
+        "author_history": [
+          "Goulart"
+        ]
+      },
+      "author": "Goulart",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceUrl": "https://wger.de/media/exercise-video/512/fff4c294-93f0-4926-b3a2-bf59ad4afaa5.MOV",
+      "metadataUrl": "https://wger.de/api/v2/exerciseinfo/512/",
+      "mediaId": 1,
+      "changes": "原片完整时长；HLG/Dolby Vision 已转为 SDR BT.709、H.264；画面等比缩至宽640像素（libx264 slow、CRF 28），保留原AAC 64kbps音频与帧率；无裁切、无剪辑、无变速。"
+    },
+    {
+      "exercise": "legpress",
+      "exerciseId": 371,
+      "videoId": 44,
+      "src": "./assets/exercises/legpress-demo.mp4",
+      "poster": "./assets/exercises/legpress-poster.jpg",
+      "sourceRecord": {
+        "id": 44,
+        "uuid": "6aae16b4-01b9-4eb4-935c-3250f84d2c59",
+        "exercise": 371,
+        "video": "https://wger.de/media/exercise-video/371/6aae16b4-01b9-4eb4-935c-3250f84d2c59.MOV",
+        "is_main": false,
+        "size": 57665329,
+        "duration": "34.69",
+        "width": 1920,
+        "height": 1080,
+        "codec": "hevc",
+        "codec_long": "H.265 / HEVC (High Efficiency Video Coding)",
+        "license": 2,
+        "license_title": "",
+        "license_object_url": "",
+        "license_author": "Goulart",
+        "license_author_url": "",
+        "license_derivative_source_url": "",
+        "author_history": [
+          "Goulart"
+        ]
+      },
+      "author": "Goulart",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourceUrl": "https://wger.de/media/exercise-video/371/6aae16b4-01b9-4eb4-935c-3250f84d2c59.MOV",
+      "metadataUrl": "https://wger.de/api/v2/exerciseinfo/371/",
+      "mediaId": 44,
+      "changes": "原片完整时长；HLG/Dolby Vision 已转为 SDR BT.709、H.264；画面等比缩至宽640像素（libx264 slow、CRF 28），保留原AAC 64kbps音频与帧率；无裁切、无剪辑、无变速。"
+    }
+  ],
+  "exercises": {
+    "pulldown": {
+      "variant": "坐姿、胸前高位下拉",
+      "sources": [
+        {
+          "title": "Life Fitness：下拉机设置与动作说明",
+          "url": "https://support.lifefitness.com/hc/en-us/articles/360036936034-Circuit-Series-Machine-Use-Instructions"
+        },
+        {
+          "title": "wger：高位下拉动作库",
+          "url": "https://wger.de/en/exercise/355/view/"
+        }
+      ],
+      "images": [
+        "./assets/exercises/pulldown-equipment.svg",
+        "./assets/exercises/pulldown-positions.svg"
+      ],
+      "video": null
+    },
+    "chest": {
+      "variant": "坐姿、背靠垫的器械胸推",
+      "sources": [
+        {
+          "title": "Life Fitness：胸推机动作说明",
+          "url": "https://support.lifefitness.com/hc/en-us/articles/360036936034-Circuit-Series-Machine-Use-Instructions"
+        }
+      ],
+      "images": [
+        "./assets/exercises/chest-equipment.svg",
+        "./assets/exercises/chest-positions.svg"
+      ],
+      "video": null
+    },
+    "pecfly": {
+      "variant": "坐姿、背靠垫的蝴蝶机夹胸",
+      "sources": [
+        {
+          "title": "Life Fitness Optima：Pectoral Fly / Rear Deltoid 使用说明",
+          "url": "https://www.lifefitness.com.au/wp-content/uploads/2015/02/Optima_user_manual_for_all_strength_2_585_1371787541.pdf"
+        },
+        {
+          "title": "wger：Butterfly 动作库",
+          "url": "https://wger.de/en/exercise/135/view/"
+        }
+      ],
+      "images": [
+        "./assets/exercises/pecfly-equipment.svg",
+        "./assets/exercises/pecfly-positions.svg"
+      ],
+      "video": null
+    },
+    "row": {
+      "variant": "坐姿低位绳索划船、双手窄握",
+      "sources": [
+        {
+          "title": "Life Fitness：坐姿划船动作说明",
+          "url": "https://support.lifefitness.com/hc/en-us/articles/360036936034-Circuit-Series-Machine-Use-Instructions"
+        },
+        {
+          "title": "wger：Seated Cable Row",
+          "url": "https://wger.de/en/exercise/1117/view/"
+        }
+      ],
+      "images": [
+        "./assets/exercises/row-equipment.svg",
+        "./assets/exercises/row-positions.svg",
+        "./assets/exercises/row-poster.jpg"
+      ],
+      "video": "./assets/exercises/row-demo.mp4"
+    },
+    "lateral": {
+      "variant": "站姿、双手哑铃侧平举",
+      "sources": [
+        {
+          "title": "wger：Lateral Raises 动作与演示",
+          "url": "https://wger.de/en/exercise/348/view/"
+        },
+        {
+          "title": "ACE：肩部训练与侧平举参考",
+          "url": "https://www.acefitness.org/resources/pros/expert-articles/9074/smart-shoulder-solutions-an-evidence-based-approach-to-training-the-deltoids/"
+        }
+      ],
+      "images": [
+        "./assets/exercises/lateral-equipment.svg",
+        "./assets/exercises/lateral-positions.svg",
+        "./assets/exercises/lateral-poster.jpg"
+      ],
+      "video": "./assets/exercises/lateral-demo.mp4"
+    },
+    "legpress": {
+      "variant": "斜躺式腿举机、双腿蹬踏板",
+      "sources": [
+        {
+          "title": "wger：Leg Press 与真人演示",
+          "url": "https://wger.de/en/exercise/371/view/"
+        },
+        {
+          "title": "Life Fitness：Signature Plate Loaded Leg Press",
+          "url": "https://www.lifefitness.com/en-us/catalog/strength-training/plate-loaded/signature-series-plate-loaded-linear-leg-press"
+        }
+      ],
+      "images": [
+        "./assets/exercises/legpress-equipment.svg",
+        "./assets/exercises/legpress-positions.svg",
+        "./assets/exercises/legpress-poster.jpg"
+      ],
+      "video": "./assets/exercises/legpress-demo.mp4"
+    },
+    "legcurl": {
+      "variant": "坐姿腿弯举；不是俯卧式腿弯举",
+      "sources": [
+        {
+          "title": "Life Fitness：坐姿腿弯举设置与动作说明",
+          "url": "https://support.lifefitness.com/hc/en-us/articles/360036936034-Circuit-Series-Machine-Use-Instructions"
+        },
+        {
+          "title": "ACE：坐姿腿弯举设置研究说明",
+          "url": "https://acefitnessmediastorage.blob.core.windows.net/webcontent/February2018/ACE_HamstringsStudy.pdf"
+        }
+      ],
+      "images": [
+        "./assets/exercises/legcurl-equipment.svg",
+        "./assets/exercises/legcurl-positions.svg",
+        "./assets/exercises/legcurl-poster.jpg"
+      ],
+      "video": "./assets/exercises/legcurl-demo.mp4"
+    },
+    "crunch": {
+      "variant": "高位绳索、跪姿卷腹",
+      "sources": [
+        {
+          "title": "Bodybuilding.com 官方：Cable Crunch 教学",
+          "url": "https://www.youtube.com/watch?v=3qjoXDTuyOE"
+        }
+      ],
+      "images": [
+        "./assets/exercises/crunch-equipment.svg",
+        "./assets/exercises/crunch-positions.svg"
+      ],
+      "video": null
+    },
+    "shoulder": {
+      "variant": "坐姿、背靠垫的器械肩推",
+      "sources": [
+        {
+          "title": "Life Fitness：肩推机动作说明",
+          "url": "https://support.lifefitness.com/hc/en-us/articles/360036936034-Circuit-Series-Machine-Use-Instructions"
+        },
+        {
+          "title": "wger：Shoulder Press, on Machine",
+          "url": "https://wger.de/en/exercise/543/view/"
+        }
+      ],
+      "images": [
+        "./assets/exercises/shoulder-equipment.svg",
+        "./assets/exercises/shoulder-positions.svg",
+        "./assets/exercises/shoulder-poster.jpg"
+      ],
+      "video": "./assets/exercises/shoulder-demo.mp4"
+    },
+    "bridge": {
+      "variant": "地面双脚自重臀桥；不是凳上臀推",
+      "sources": [
+        {
+          "title": "ACE：地面臀桥分步教学",
+          "url": "https://www.acefitness.org/resources/everyone/exercise-library/49/glute-bridge/"
+        }
+      ],
+      "images": [
+        "./assets/exercises/bridge-equipment.svg",
+        "./assets/exercises/bridge-positions.svg"
+      ],
+      "video": null
+    },
+    "reversefly": {
+      "variant": "胸靠垫、面向器械的反向蝴蝶机飞鸟",
+      "sources": [
+        {
+          "title": "Life Fitness Optima：Rear Deltoid 使用说明",
+          "url": "https://www.lifefitness.com.au/wp-content/uploads/2015/02/Optima_user_manual_for_all_strength_2_585_1371787541.pdf"
+        },
+        {
+          "title": "wger：Butterfly Reverse",
+          "url": "https://wger.de/en/exercise/139/view/"
+        }
+      ],
+      "images": [
+        "./assets/exercises/reversefly-equipment.svg",
+        "./assets/exercises/reversefly-positions.svg"
+      ],
+      "video": null
+    },
+    "reversecrunch": {
+      "variant": "仰卧、屈膝的骨盆反向卷起",
+      "sources": [
+        {
+          "title": "Catalyst Athletics：Reverse Crunch 教学",
+          "url": "https://www.catalystathletics.com/exercise/320/Reverse-Crunch/"
+        },
+        {
+          "title": "wger：Reverse crunch",
+          "url": "https://wger.de/en/exercise/1772/view/"
+        }
+      ],
+      "images": [
+        "./assets/exercises/reversecrunch-equipment.svg",
+        "./assets/exercises/reversecrunch-positions.svg"
+      ],
+      "video": null
+    }
+  },
+  "excluded": [
+    {
+      "exercise": "chest",
+      "reason": "wger image593 来源字段指向 FitnessVolt，未找到权利方的明确再利用授权；image681 标为AI生成且无作者，均未采用。"
+    },
+    {
+      "exercise": "pulldown",
+      "reason": "候选158为窄握变式，不能代替当前略宽于肩的胸前下拉演示。"
+    },
+    {
+      "exercise": "bridge",
+      "reason": "候选265图片未标作者，保留原创起止姿势辅助图与ACE教程。"
+    },
+    {
+      "exercise": "reversecrunch",
+      "reason": "不使用抬腿素材冒充骨盆卷起动作；保留原创屈膝骨盆卷起辅助图与专业教程。"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-17",
+  "status": "browser-worker-verified",
+  "mode": "plane",
+  "board": "15x15 freestyle Gomoku",
+  "difficulty": "max",
+  "configuredBudgetMs": 2600,
+  "engine": "Rapfi WASM + freestyle NNUE",
+  "moves": [
+    {
+      "ply": 1,
+      "side": "black / engine",
+      "cell": "H8",
+      "elapsedMs": 260,
+      "depth": null,
+      "nodes": null,
+      "note": "Empty-board opening; the engine returned the center."
+    },
+    {
+      "ply": 3,
+      "side": "black / engine",
+      "cell": "G6",
+      "elapsedMs": 2785,
+      "depth": 17,
+      "nodes": 72950,
+      "note": "After the human's H7 reply; the configured 2600 ms budget was exceeded by 185 ms."
+    }
+  ],
+  "verification": "The local browser page loaded Rapfi and made legal moves through its Worker. This is a two-move planar control sample, not a win-rate measurement.",
+  "topologyParity": "not measured; this planar control does not establish strength on wrapped or non-orientable boards"
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-17T16:08:16.614Z",
+  "engine": "拓扑原生增量局面 + alpha-beta/PVS + 置换表 + 拓扑威胁扩展",
+  "seed": 20261017,
+  "openingPlies": 8,
+  "difficulty": "max",
+  "budgetMs": 5000,
+  "topologies": {
+    "cylinder": {
+      "size": "7x6",
+      "opening": [
+        "cylinder:3:3",
+        "cylinder:2:2",
+        "cylinder:3:2",
+        "cylinder:4:4",
+        "cylinder:2:4",
+        "cylinder:1:1",
+        "cylinder:5:5",
+        "cylinder:0:0"
+      ],
+      "toMove": 1,
+      "selectedMove": "cylinder:5:3",
+      "completedDepth": 6,
+      "nodes": 608288,
+      "nodeLimit": 750000,
+      "elapsedMs": 5001,
+      "stoppedBy": "time"
+    },
+    "torus": {
+      "size": "7x6",
+      "opening": [
+        "torus:3:3",
+        "torus:4:4",
+        "torus:4:5",
+        "torus:4:2",
+        "torus:3:4",
+        "torus:3:2",
+        "torus:5:1",
+        "torus:4:3"
+      ],
+      "toMove": 1,
+      "selectedMove": "torus:5:0",
+      "completedDepth": 8,
+      "nodes": 314432,
+      "nodeLimit": 750000,
+      "elapsedMs": 5001.1,
+      "stoppedBy": "time"
+    },
+    "mobius": {
+      "size": "8x6",
+      "opening": [
+        "mobius:4:3",
+        "mobius:4:2",
+        "mobius:3:4",
+        "mobius:4:4",
+        "mobius:3:1",
+        "mobius:3:2",
+        "mobius:2:4",
+        "mobius:4:5"
+      ],
+      "toMove": 1,
+      "selectedMove": "mobius:2:2",
+      "completedDepth": 6,
+      "nodes": 507360,
+      "nodeLimit": 750000,
+      "elapsedMs": 5000.3,
+      "stoppedBy": "time"
+    },
+    "klein": {
+      "size": "7x6",
+      "opening": [
+        "klein:3:3",
+        "klein:4:4",
+        "klein:4:5",
+        "klein:3:5",
+        "klein:3:0",
+        "klein:3:2",
+        "klein:5:4",
+        "klein:5:3"
+      ],
+      "toMove": 1,
+      "selectedMove": "klein:6:3",
+      "completedDepth": 7,
+      "nodes": 465120,
+      "nodeLimit": 750000,
+      "elapsedMs": 5000.8,
+      "stoppedBy": "time"
+    },
+    "projective": {
+      "size": "8x8",
+      "opening": [
+        "projective:sphere:3:0",
+        "projective:sphere:3:4",
+        "projective:sphere:3:5",
+        "projective:sphere:2:5",
+        "projective:sphere:2:4",
+        "projective:sphere:2:3",
+        "projective:sphere:3:7",
+        "projective:sphere:1:3"
+      ],
+      "toMove": 1,
+      "selectedMove": "projective:pole",
+      "completedDepth": 9,
+      "nodes": 17201,
+      "nodeLimit": 750000,
+      "elapsedMs": 192.2,
+      "stoppedBy": null
+    },
+    "sphere": {
+      "size": "7x7",
+      "opening": [
+        "sphere:3:3",
+        "sphere:3:2",
+        "sphere:2:4",
+        "sphere:3:4",
+        "sphere:2:1",
+        "sphere:2:2",
+        "sphere:1:4",
+        "sphere:4:3"
+      ],
+      "toMove": 1,
+      "selectedMove": "sphere:north",
+      "completedDepth": 8,
+      "nodes": 372704,
+      "nodeLimit": 750000,
+      "elapsedMs": 5000.3,
+      "stoppedBy": "time"
+    }
+  }
+}
