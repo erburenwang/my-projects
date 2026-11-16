@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "file-ledger"
+version = "1.0.0"
+description = "Offline SHA-256 manifests, handoff verification and duplicate reports"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "erburenwang"}]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["markdown-it-py>=3,<5"]
+
+[project.scripts]
+file-ledger = "file_ledger.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["file_ledger*"]

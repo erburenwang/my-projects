@@ -5,6 +5,7 @@ Small, practical tools for developers and open-source maintainers.
 | Project | What it does | Try it |
 | --- | --- | --- |
 | [IssueReady](projects/issue-ready/) | Draft a reproducible bug report and review likely sensitive text locally before sharing. | [Open the app](https://erburenwang.github.io/my-projects/) |
+| [File Ledger · 文件交付核验](projects/file-ledger/) | Offline file manifests, copy verification, historical comparisons and duplicate reports. Python 3.10+, no runtime dependencies. | [Quick start & download](projects/file-ledger/) |
 | [Topology Gomoku](projects/topology-gomoku/) | Gomoku with seven board topologies, 2D/3D views, human play, and local Rapfi AI. | See the [project README](projects/topology-gomoku/) |
 | [Fitness tracker](projects/fitness-mobile/) | Training and meal logs, rest timer, exercise guides, and backup. | See the [project README](projects/fitness-mobile/) |
 
